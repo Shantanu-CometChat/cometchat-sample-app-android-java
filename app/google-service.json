@@ -1,0 +1,29 @@
+{
+    "project_info": {
+      "project_number": "383037967338",
+      "project_id": "android-test-project-70d3f",
+      "storage_bucket": "android-test-project-70d3f.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:383037967338:android:f63011c5a0cc5ade3cc093",
+          "android_client_info": {
+            "package_name": "com.cometchat.javasampleapp.Application"
+          }
+        },
+        "oauth_client": [],
+        "api_key": [
+          {
+            "current_key": "AIzaSyCPh9BLyZVlb7ikYhXHrYyncaEZnWc1gTM"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": []
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
