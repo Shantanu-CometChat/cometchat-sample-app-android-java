@@ -20,7 +20,13 @@ jobs:
           distribution: 'adopt'
 
       - name: Build Debug APK
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleDebug  
+
+      - name: Install Tree
+        run: sudo apt-get install tree
+
+      - name: Print Folder Structure
+        run: tree  
 
       - name: Upload to Firebase App Distribution
         uses: w9jds/firebase-action@master
