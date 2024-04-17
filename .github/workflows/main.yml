@@ -25,6 +25,6 @@ jobs:
       - name: Upload to Firebase App Distribution
         uses: w9jds/firebase-action@master
         with:
-          args: appdistribution:distribute build/outputs/apk/debug/app-debug.apk --app android-test-project-70d3f --groups sampleTesters
+          args: appdistribution:distribute build/outputs/apk/debug/app-debug.apk --app 1:481720887348:android:c564561aaf81e6b0774261 --groups sampleAppTesters
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
