@@ -26,7 +26,7 @@ jobs:
         run: sudo apt-get install tree
 
       - name: Print Folder Structure
-        run: tree  
+        run: tree -d
 
       - name: Upload to Firebase App Distribution
         uses: w9jds/firebase-action@master
