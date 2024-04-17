@@ -1,0 +1,30 @@
+name: Android CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'adopt'
+
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug
+
+      - name: Upload to Firebase App Distribution
+        uses: w9jds/firebase-action@master
+        with:
+          args: appdistribution:distribute build/outputs/apk/debug/app-debug.apk --app android-test-project-70d3f --groups sampleTesters
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
