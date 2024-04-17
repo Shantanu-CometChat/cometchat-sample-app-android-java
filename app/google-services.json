@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:481720887348:android:c564561aaf81e6b0774261",
+        "mobilesdk_app_id": "1:481720887348:android:dc082c38bf6312ac774261",
         "android_client_info": {
-          "package_name": "com.cometchat.javasampleapp.Application"
+          "package_name": "com.cometchat.javasampleapp"
         }
       },
       "oauth_client": [],
