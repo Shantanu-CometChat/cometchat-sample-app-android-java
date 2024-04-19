@@ -39,3 +39,5 @@ For issues running the project or integrating with our UI Kits, consult our [doc
 4.3.4-beta.3y
 
 4.3.4-beta.3
+
+4.3.4-beta.4
