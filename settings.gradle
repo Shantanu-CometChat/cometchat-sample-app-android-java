@@ -11,11 +11,9 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven{
-            url "https://dl.cloudsmith.io/public/cometchat/call-team/maven/"
-        }
-        maven{
             url "https://dl.cloudsmith.io/public/cometchat/cometchat/maven/"
         }
+       
     }
 }
 rootProject.name = "JavaSampleApp"
