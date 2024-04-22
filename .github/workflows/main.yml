@@ -26,10 +26,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
 
-      - name: Get last commit message
-        id: last_commit
-        run: echo "::set-output name=message::$(git log -1 --pretty=%B)"
-
       - name: Use commit message
         run: |
           echo "Last commit message: ${{ steps.last_commit.outputs.message }}"   
@@ -52,6 +48,7 @@ jobs:
       # - name: Upload to Firebase App Distribution
       #   uses: w9jds/firebase-action@master
       #   with:
-      #     args: appdistribution:distribute ./app/build/outputs/apk/debug/app-debug.apk --app 1:481720887348:android:dc082c38bf6312ac774261 --groups sampleAppTesters
+      #     args: appdistribution:distribute ./app/build/outputs/apk/debug/app-debug.apk --app 1:481720887348:android:dc082c38bf6312ac774261 --groups sampleAppTesters 
+      ## <remove this as its a test to add release notes > --release-notes ${{ steps.last_commit.outputs.message }}
       #   env:
       #     FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
