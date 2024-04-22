@@ -35,3 +35,5 @@ This is a reference application showcasing the integration of [**CometChat's And
 
 ## Help and Support
 For issues running the project or integrating with our UI Kits, consult our [documentation](https://www.cometchat.com/docs/android-uikit/integration) or create a [support ticket](https://help.cometchat.com/hc/en-us) or seek real-time support via the [CometChat Dashboard](http://app.cometchat.com/).
+
+4.3.5-beta1
